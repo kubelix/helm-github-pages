@@ -29,8 +29,6 @@ echo "CIRCLE_BRANCH=$CIRCLE_BRANCH"
 echo '>> Prepare...'
 mkdir -p /tmp/helm/bin
 mkdir -p /tmp/helm/publish
-apk update
-apk add ca-certificates git openssh
 
 echo '>> Installing Helm...'
 cd /tmp/helm/bin
